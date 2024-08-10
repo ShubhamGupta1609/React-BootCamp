@@ -1,0 +1,220 @@
+.textBold{
+  font-weight: bold;
+  font-size: 12px;
+  margin-right: 10px;
+}
+.my-table-responsive-desktop{
+  @media (max-width: 769px) {
+    width: 100% !important;
+  }
+    width: 50% !important;
+    padding: 10px;
+}
+.product-brief-section{
+  /* border: 1px solid pink; */
+  padding: 10px;
+  background: #87ffc21f;
+  border-radius: 15px;
+}
+.class-desktop-view{
+  @media (max-width: 768px) {
+    display: block !important;
+  }
+  display: none !important;
+}
+.class-desktop-view-1{
+  @media (min-width: 768px) {
+    display: block !important;
+  }
+  display: none !important;
+}
+img{
+  @media (max-width: 768px) {
+    height: 350px;
+    width: inherit;
+  }
+}
+.boxStyle {
+  border: 5px solid #63aceb !important;
+  height: 45px !important;
+  width: 45px !important;
+  border-radius: 15%;
+};
+.similar-sec-class{
+  @media (min-width: 768px) {
+    min-width: 33%;
+    max-width: 33%;
+  }
+  min-width: 100%;
+}
+.SetSelectedStyle{
+  min-width: 45px;
+  border: 5px solid #749bd3 !important;
+  height: 45px !important;
+  width: 45px !important;
+  border-radius: 10px;
+}
+.custom-width{
+  height: 100%;
+  width: 100%;
+}
+.icon_nav{
+  height: 26px;
+  width: 24px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+td{
+  font-size: 12px !important;
+}
+
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container-image {
+  position: relative;
+  padding: 80px;
+}
+
+/* .holder {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+} */
+
+.holder::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide the images by default */
+.slides {
+  display: none;
+  /* max-width: 1000px; */
+  /* width: 100%;
+  flex-shrink: 0;
+  height: 100%; */
+}
+
+.slides img {
+  width: 100%;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width: 600px) {
+  .prevContainer,
+  .nextContainer {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.prevContainer,
+.nextContainer {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 50%;
+  transform: translate(0, calc(-50% - 54px));
+  height: 54px;
+  width: 54px;
+  cursor: pointer;
+}
+
+.prevContainer {
+  margin-left: 26px;
+  left: 0;
+  border-radius: 30px 0 0 30px;
+}
+
+.prev {
+  position: relative;
+  top: 35%;
+  transform: translate(0, -50%);
+  height: 34px;
+  width: 32px;
+  float: left;
+  margin-left: 12px
+}
+
+.prev svg,
+.next svg {
+  fill: white;
+}
+
+.nextContainer {
+  margin-right: 26px;
+  right: 0;
+  border-radius: 0 30px 30px 0;
+}
+
+.next {
+  position: relative;
+  top: 35%;
+  transform: translate(0, -50%);
+  height: 34px;
+  width: 32px;
+  float: right;
+  margin-right: 12px;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: left;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumbnail images */
+.slide-thumbnail {
+  width: 100%;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.active,
+.slide-thumbnail:hover {
+  opacity: 1;
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

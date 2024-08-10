@@ -1,0 +1,9 @@
+.shared_class{
+  border: 1px solid #f1ecec;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  @media (min-width: 549px) {
+    width: 250px; /* Adjust the width as per your requirement */
+  }
+}

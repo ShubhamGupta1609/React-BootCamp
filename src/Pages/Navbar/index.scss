@@ -1,0 +1,130 @@
+.user_nav{
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+  padding: 20px 20px 20px 10px;
+  background: #eeeeee;
+}
+.offcanvas-header{
+  align-items: unset!important;
+  justify-content: unset!important;
+  padding: unset!important;
+  display: unset!important;
+}
+.offcanvas-header .btn-close{
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+.navItemsClass{
+  padding: 20px 20px 10px 0px;
+  border-bottom: 1px solid;
+  cursor: pointer;
+}
+.seachInputClass{
+  height: 35px;
+  @media (max-width: 768px) {
+    width: 100%;
+    padding-right: 45%;
+  }
+  @media (min-width: 1024px) {
+    width: 500px;
+    padding-right: 40px;  }
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.navbar-brand{
+ width: -webkit-fill-available; 
+}
+.custom-nav{
+  position: sticky;
+  top: 0px;
+  z-index: 9999;
+}
+.navbar-brand{
+  margin: unset !important;
+  padding: 0 10px 0 10px;
+}
+/*.navbar{
+ margin: unset !important; 
+}*/
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+  z-index: 99999999;
+}
+.display-toggle{
+  @media (min-width: 768px){
+    display: none;
+  }
+}
+.display-toggle-1{
+  font-weight: bold;
+  margin-right: 20px;
+  cursor: pointer;
+  @media (min-width: 768px){
+    display: block;
+  }
+  display: none;
+  span{
+    font-size: 12px;
+    &:hover{
+      text-decoration: underline;
+      color: blue
+    }
+  }
+}
+.offcanvas.offcanvas-end{
+  @media (min-width: 768px){
+    display: none;
+  }
+}
+.ajust_calss{
+  display: flex;
+  align-items: center !important;
+  margin-top: 5px;
+  span{
+    font-size: 14px;
+  }
+}
+.display_heart{
+  @media (min-width: 769px) {
+    display: none !important; 
+  }
+}
+.search_resert_class{
+  /*
+  padding: 10px;
+  */
+}
+.search_result_class{
+  cursor: pointer;
+  background: white;
+  padding: 10px;
+}
+.navbar {
+  background-color: #f8f8f8;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-item {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgb(74 197 200);
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item:hover {
+  background-color: #2c82c9;
+  color: white !important;
+  text-decoration: none !important;
+}

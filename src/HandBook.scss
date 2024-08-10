@@ -1,0 +1,33 @@
+.Product_Name {
+  @media (min-width: 549px) {
+    width: 250px; /* Adjust the width as per your requirement */
+  }
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: bold;
+}
+.New_Class{
+  @media (min-width: 549px) {
+    display: flex!important;
+    flex-wrap: wrap!important;
+    align-items: center!important;
+    justify-content: center!important;
+  }
+  display: unset !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.card_class-products{
+  @media (min-width: 549px) {
+    width: 333px;
+  }
+  width: unset !important;
+}
+.page-link{
+  span{
+   font-size: 15px;
+  }
+}

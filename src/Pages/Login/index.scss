@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.body-login{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  min-height: 100vh;
+  background: white;
+  margin: 0 50px 0 50px;
+}
+.box{
+  position: relative;
+  width: 380px;
+  height: 460px;
+  background: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+
+  &:before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+  }
+
+  &:after{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s
+  }
+  @keyframes animate{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+
+}
+.form{
+  position:absolute;
+  inset: 2px;
+  background: white;
+  border-radius: 8px;
+  z-index: 10;
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+
+  h2{
+    font-weight: 400;
+    letter-spacing: 0.1em;
+  }
+}
+.inputBox{
+  position: relative;
+  margin-bottom: 15px;
+  color: #45f3ff;
+  height: 45px;
+  i {
+    position: absolute;
+    width: 48px;
+    height:100%;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  input{
+    width: 100%;
+    height:100%;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    font-size: 17px;
+    transition:all .3s;
+    border-bottom:1.8px solid #00000059;
+  }
+}
+.inputBox1{
+  position: relative;
+  margin-bottom: 15px;
+  color: #45f3ff;
+  height: 30px;
+  i {
+    position: absolute;
+    width: 48px;
+    height:100%;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  input{
+    width: 100%;
+    height:100%;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    text-align: center;
+    font-family:'Montserrat',sans-serif;
+    font-size: 12px;
+    transition:all .3s;
+    border-bottom: 2px solid deeppink;
+  }
+}
+a{
+  color: white;
+  text-decoration: none;
+  padding-bottom: 10px;
+  padding-top:10px;
+
+  &:hover{
+    text-decoration: underline;
+  }
+
+}
+p{
+
+  float: left;
+}
+.loginButton{
+  color: #3b3f54;
+  font-size: 14px;
+  margin-bottom: 10px;
+  background: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #3b3f54;
+  transition: all 0.3s;
+  height: 30px;
+  &:hover{
+    cursor: pointer;
+   
+  }
+}
+.loginButton-1{
+  width: 48%;
+}
+.freeze-class{
+  pointer-events: none;
+  opacity: 0.5;
+}
+.showpassclass{
+  right: 0px !important;
+  color: black !important;
+}
